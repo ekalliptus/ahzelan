@@ -1,6 +1,6 @@
 # Ahzelan.com
 
-> Personal brand & digital-marketing site for **Ahzelan** — built with Astro, Bun, Tailwind v4, shadcn/ui, Supabase, and deployed on Cloudflare.
+> Personal brand & digital-marketing site for **Ahzelan**: built with Astro, Bun, Tailwind v4, shadcn/ui, Supabase, and deployed on Cloudflare.
 
 ## Stack
 
@@ -19,7 +19,7 @@
 ## Brand (from the design system)
 
 - **Primary**: Royal Blue `#2E4191` (sampled from the real logo)
-- **Secondary**: Teal `#06b6d4` (gradient pair — blue → cyan)
+- **Secondary**: Teal `#06b6d4` (gradient pair: blue → cyan)
 - **Accent**: Amber `#f59e0b`
 - **Success**: Green `#10b981` (status only)
 - **Voice**: santai, friendly, sedikit playful, percaya diri, tetap profesional. "kamu" for reader, "aku" for Ahzelan. Primary CTA: **Chat Ahzelan** (WhatsApp).
@@ -59,7 +59,7 @@ cp .env.example .env       # fill in PUBLIC_SUPABASE_URL + keys (optional)
 bun run dev                # http://localhost:4321
 ```
 
-Without env vars, the site renders from [`src/lib/fallback.ts`](src/lib/fallback.ts) — real ahzelan.com content scraped and brand-voice placeholder for what's not public (pricing, FAQ detail, privacy).
+Without env vars, the site renders from [`src/lib/fallback.ts`](src/lib/fallback.ts): real ahzelan.com content scraped and brand-voice placeholder for what's not public (pricing, FAQ detail, privacy).
 
 ### Supabase setup (one-time)
 
@@ -110,18 +110,18 @@ Public traffic only sees `status='published'` / `is_visible=true` rows (enforced
 
 Every entity is editable from `/admin`:
 
-- **Dashboard** — counts + quick actions + recent activity
-- **Halaman** — page metadata + SEO
-- **Media** — upload to Supabase Storage, alt text, copy URL
-- **Tema** — primary swatch, radius, font, live preview → saves to `site_settings`
-- **Navigasi** — menu items + sort
-- **Layanan** — services
-- **Paket Harga** — landing page packages (featured = highlighted)
-- **Testimoni** — quote + rating
-- **FAQ** — accordion items
-- **Rekomendasi** — tools/products with category filter
-- **Artikel** — full editor (title, slug, HTML content, SEO, draft/publish, preview)
-- **Pengaturan** — site name, contact, socials, default SEO, analytics script
+- **Dashboard**: counts + quick actions + recent activity
+- **Halaman**: page metadata + SEO
+- **Media**: upload to Supabase Storage, alt text, copy URL
+- **Tema**: primary swatch, radius, font, live preview → saves to `site_settings`
+- **Navigasi**: menu items + sort
+- **Layanan**: services
+- **Paket Harga**: landing page packages (featured = highlighted)
+- **Testimoni**: quote + rating
+- **FAQ**: accordion items
+- **Rekomendasi**: tools/products with category filter
+- **Artikel**: full editor (title, slug, HTML content, SEO, draft/publish, preview)
+- **Pengaturan**: site name, contact, socials, default SEO, analytics script
 
 ## Security notes
 
